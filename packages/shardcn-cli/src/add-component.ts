@@ -1,8 +1,8 @@
 import fs from "fs-extra";
 import path from "path";
-import { fetchRegistry, fetchFile } from "./fetch-registry.js";
-import { detectShadcnDir } from "./detect-shadcn.js";
-import { replaceImportPaths } from "./replace-imports.js";
+import { fetchRegistry, fetchFile } from "./fetch-registry";
+import { detectShadcnDir } from "./detect-shadcn";
+import { replaceImportPaths } from "./replace-imports";
 
 export async function addComponent(name: string) {
     const cwd = process.cwd();
@@ -18,7 +18,7 @@ export async function addComponent(name: string) {
     await fs.ensureDir(targetDir);
 
     const baseUrl =
-        "https://raw.githubusercontent.com/YOUR_GITHUB/shardcn-registry/main/registry";
+        "https://raw.githubusercontent.com/laoer536/shardcn/refs/heads/main/packages/shardcn-registry/registry";
 
     for (const file of comp.files) {
         const url = `${baseUrl}/${comp.path}/${file}`;
