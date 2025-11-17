@@ -1,0 +1,10 @@
+{
+  "form-dialog": {
+    "path": "form-dialog",
+    "files": ["index.tsx", "useForm.ts", "meta.json"]
+  },
+  "search-panel": {
+    "path": "search-panel",
+    "files": ["index.tsx", "meta.json"]
+  }
+}
