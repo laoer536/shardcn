@@ -205,7 +205,14 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
 
-  packages/shardcn-registry: {}
+  packages/shardcn-registry:
+    dependencies:
+      '@types/react':
+        specifier: ^19
+        version: 19.2.5
+      react:
+        specifier: ^19
+        version: 19.2.0
 
 packages:
 
