@@ -4,6 +4,9 @@
   "description": "",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "shardcn": "dist/index.js"
+  },
   "scripts": {
     "test": "node dist/index.js",
     "build": "rolldown -c"
